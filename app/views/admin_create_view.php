@@ -1,0 +1,307 @@
+<?php 
+require_once __DIR__ . '/partials/header.php'; 
+?>
+
+<div class="main-body admin-management-page">
+    <div class="info-card-header" style="background: linear-gradient(135deg, #1e293b 0%, #1e293b 100%); color: white; padding: 1.5rem; border-radius: 12px; margin-bottom: 2rem; display: flex; align-items: center; gap: 20px;">
+        <div style="background: rgba(255,255,255,0.1); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem;">
+            <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <div>
+            <h2 style="margin: 0; font-size: 1.5rem; font-weight: 700;">Administrative Access Control</h2>
+            <p style="margin: 5px 0 0; opacity: 0.8; font-size: 0.9rem;">Manage system-wide privileges, security logs, and administrative credentials.</p>
+        </div>
+    </div>
+
+    <div class="info-guide-wrapper" style="margin-bottom: 2.5rem; padding: 0 5px;">
+        <div style="background: #ffffff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.02);">
+            <div style="background: #fff1f2; color: #e11d48; width: 42px; height: 42px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0;">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div style="flex: 1;">
+                <p style="margin: 0; font-size: 0.92rem; color: #475569; line-height: 1.6;">
+                    <span style="font-weight: 700; color: #991b1b; margin-right: 5px;">Security Alert:</span>
+                    Granting <span style="color: #e11d48; font-weight: 600;">Super Admin</span> status allows full control over the system. Review the <span style="color: #6366f1; font-weight: 600;">Activity Logs</span> before modifying permissions.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 75vh; padding: 2rem 0;">
+        <div class="stats-grid" style="margin-bottom: 2rem; width: 100%; display: flex; justify-content: center;">
+            <div class="stat-card clickable-card" style="width: 100%; max-width: 400px; cursor: pointer; border-left: 5px solid #dc2626; position: relative;" onclick="openModal('adminListModal')">
+                <div class="stat-icon red"><i class="fa-solid fa-user-shield"></i></div>
+                <div class="stat-details">
+                    <p>Authorized System Admins</p>
+                    <div class="stat-value red"><?= $stats['admin_active'] ?? 0 ?> Active</div>
+                </div>
+                <div style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); color: #94a3b8;"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+        </div>
+
+        <div class="card" style="width: 100%; max-width: 600px;">
+            <div class="card-body">
+                <div class="user-creation-header" style="margin-bottom: 2rem; display: flex; align-items: center; gap: 15px;">
+                    <div style="background: var(--blue-50); color: var(--blue-600); width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                        <i class="fa-solid fa-plus-circle"></i>
+                    </div>
+                    <div>
+                        <h3 style="margin: 0; font-size: 1.25rem;">Register New Admin</h3>
+                        <p style="margin: 0; font-size: 0.85rem; color: #64748b;">Grant high-level system access</p>
+                    </div>
+                </div>
+                
+                <form method="POST">
+                    <?php csrf_field(); ?>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="font-weight: 700; color: #475569;">Admin ID Number <span class="required">*</span></label>
+                        <input type="text" name="faculty_id" class="form-control" placeholder="e.g., ADM-001" required>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="font-weight: 700; color: #475569;">Institutional Email Address <span class="required">*</span></label>
+                        <input type="email" name="email" class="form-control" placeholder="admin@bpc.edu.ph" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                        <div class="form-group">
+                            <label style="font-weight: 700; color: #475569;">First Name <span class="required">*</span></label>
+                            <input type="text" name="first_name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label style="font-weight: 700; color: #475569;">Last Name <span class="required">*</span></label>
+                            <input type="text" name="last_name" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="font-weight: 700; color: #475569;">Middle Name</label>
+                        <input type="text" name="middle_name" class="form-control" placeholder="Optional">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 2rem;">
+                        <label style="font-weight: 700; color: #475569;">Admin Role Type <span class="required">*</span></label>
+                        <select name="role" class="form-control" required>
+                            <option value="Admin">System Administrator (Full Access)</option>
+                            <option value="Schedule Admin">Schedule Administrator (Schedules & DTR Only)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="password-info-box" style="margin-bottom: 2rem; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 15px; display: flex; align-items: flex-start; gap: 12px;">
+                        <i class="fa-solid fa-circle-info" style="color: #0369a1; margin-top: 3px;"></i>
+                        <div style="color: #0c4a6e; font-size: 0.9rem; line-height: 1.5;">
+                            <strong>Security Note:</strong> The default password for new administrators is <strong>@adminpass123</strong>.
+                        </div>
+                    </div>
+
+                    <button type="submit" name="create_admin" class="btn btn-primary btn-full-width" style="padding: 12px; font-weight: 700;">
+                        <i class="fa-solid fa-user-shield" style="margin-right: 8px;"></i> Register Administrator
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="adminListModal" class="modal">
+    <div class="modal-content modal-xl">
+        <div class="modal-header">
+            <h3><i class="fa-solid fa-shield-halved"></i> Active Administrative Personnel</h3>
+            <button type="button" class="modal-close" onclick="closeModal('adminListModal')">&times;</button>
+        </div>
+        <div class="modal-body" style="padding: 0;">
+            <div style="overflow-x: auto;">
+                <table class="data-table" style="width: 100%; border-collapse: collapse;">
+                    <thead>
+                        <tr style="background: #f8fafc; border-bottom: 2px solid #f1f5f9;">
+                            <th style="padding: 16px 24px; text-align: left; font-size: 0.75rem; font-weight: 800; color: #475569; text-transform: uppercase;">Admin ID</th>
+                            <th style="padding: 16px 24px; text-align: left; font-size: 0.75rem; font-weight: 800; color: #475569; text-transform: uppercase;">Full Name</th>
+                            <th style="padding: 16px 24px; text-align: left; font-size: 0.75rem; font-weight: 800; color: #475569; text-transform: uppercase;">Institutional Email</th>
+                            <th style="padding: 16px 24px; text-align: left; font-size: 0.75rem; font-weight: 800; color: #475569; text-transform: uppercase;">Role</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if (!empty($admins)): ?>
+                            <?php foreach ($admins as $admin): ?>
+                            <tr class="table-row-hover" style="border-bottom: 1px solid #f1f5f9;">
+                                <td style="padding: 16px 24px;">
+                                    <span class="id-badge" style="background: #fee2e2; color: #b91c1c; font-weight:800; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; border: 1px solid #fecaca;">
+                                        <?= htmlspecialchars($admin['faculty_id']) ?>
+                                    </span>
+                                </td>
+                                <td style="padding: 16px 24px; font-weight: 700; color: #1e293b;">
+                                    <?= htmlspecialchars($admin['first_name'] . ' ' . $admin['last_name']) ?>
+                                </td>
+                                <td style="padding: 16px 24px; color: #64748b; font-size: 0.9rem;">
+                                    <i class="fa-solid fa-envelope mr-1" style="opacity:0.5;"></i> <?= htmlspecialchars($admin['email']) ?>
+                                </td>
+                                <td style="padding: 16px 24px;">
+                                    <?php 
+                                        $isFullAdmin = ($admin['role'] === 'Admin');
+                                        $badgeStyle = $isFullAdmin ? 'background: #eff6ff; color: #2563eb; border-color: #dbeafe;' : 'background: #f0fdf4; color: #16a34a; border-color: #dcfce7;';
+                                    ?>
+                                    <span style="<?= $badgeStyle ?> padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 800; text-transform: uppercase; border: 1px solid;">
+                                        <i class="fa-solid <?= $isFullAdmin ? 'fa-user-shield' : 'fa-calendar-day' ?> mr-1"></i>
+                                        <?= htmlspecialchars($admin['role']) ?>
+                                    </span>
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr><td colspan="4" style="padding: 40px; text-align: center; color: #94a3b8;">No administrative accounts found.</td></tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary" onclick="closeModal('adminListModal')" style="padding: 10px 30px; border-radius: 50px;">Close Directory</button>
+        </div>
+    </div>
+</div>
+
+    <div id="adminSuccessModal" class="modal">
+    <div class="modal-content" style="border-top: 6px solid #10b981;">
+        <div class="modal-body">
+            <div class="status-icon-box bg-success-light"><i class="fa-solid fa-circle-check"></i></div>
+            <h3 style="margin-bottom: 1rem; font-weight: 800;">Account Created</h3>
+            <p id="successDetailText" style="color: #64748b; font-size: 1.05rem; line-height: 1.6;"></p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" onclick="closeModal('adminSuccessModal')" style="padding: 12px 60px; border-radius: 12px; background: #1e293b; border: none;">Proceed</button>
+        </div>
+    </div>
+</div>
+
+    <div id="adminListModal" class="modal">
+        <div class="modal-content" style="max-width: 900px; width: 95%;">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-shield-halved"></i> Active System Administrators</h3>
+                <button class="modal-close" onclick="closeModal('adminListModal')">&times;</button>
+            </div>
+            <div class="modal-body" style="padding: 0; min-height: 300px;">
+                <table class="data-table" style="width: 100%; border-collapse: collapse;">
+                    <thead style="background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+                        <tr>
+                            <th style="padding: 15px; text-align: left; color: #475569; font-size: 0.75rem; text-transform: uppercase;">Admin ID</th>
+                            <th style="padding: 15px; text-align: left; color: #475569; font-size: 0.75rem; text-transform: uppercase;">Full Name</th>
+                            <th style="padding: 15px; text-align: left; color: #475569; font-size: 0.75rem; text-transform: uppercase;">Institutional Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if (!empty($admins)): ?>
+                            <?php foreach ($admins as $admin): ?>
+                            <tr style="border-bottom: 1px solid #f1f5f9; transition: background 0.2s;">
+                                <td style="padding: 15px;">
+                                    <span class="id-badge" style="background: #fee2e2; color: #b91c1c; font-weight:800; padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; border: 1px solid #fecaca;">
+                                        <?= htmlspecialchars($admin['faculty_id']) ?>
+                                    </span>
+                                </td>
+                                <td style="padding: 15px; font-weight: 600; color: #1e293b;">
+                                    <?= htmlspecialchars($admin['first_name'] . ' ' . $admin['last_name']) ?>
+                                </td>
+                                <td style="padding: 15px; font-size: 0.85rem; color: #64748b;">
+                                    <?= htmlspecialchars($admin['email']) ?>
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="3" style="padding: 4rem; text-align: center; color: #94a3b8;">
+                                    <i class="fa-solid fa-user-slash" style="display: block; font-size: 3rem; margin-bottom: 15px; opacity: 0.4;"></i>
+                                    <h3 style="margin: 0;">No Administrators Found</h3>
+                                    <p style="margin-top: 5px;">Currently there are no other active administrators registered.</p>
+                                </td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer" style="background: #f8fafc; justify-content: center;">
+                <button class="btn btn-secondary" onclick="closeModal('adminListModal')">Close View</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.clickable-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+.clickable-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px -10px rgba(220, 38, 38, 0.15);
+    background: #fffcfc;
+}
+.data-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.dismissible-alert {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 15px 20px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 500;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        transition: opacity 0.5s ease-out;
+    }
+
+.alert-success { background: #ecfdf5; border: 1px solid #10b981; color: #065f46; }
+.alert-error { background: #fef2f2; border: 1px solid #ef4444; color: #991b1b; }
+</style>
+
+<script>
+function openModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeModal(id) {
+    const modal = document.getElementById(id);
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+}
+
+window.addEventListener('click', function(event) {
+    if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const alerts = document.querySelectorAll('.dismissible-alert');
+    alerts.forEach(alert => {
+        setTimeout(() => {
+            alert.style.opacity = '0';
+            setTimeout(() => alert.remove(), 500);
+        }, 6000);
+    });
+});
+
+window.onclick = (e) => { if (e.target.classList.contains('modal')) closeModal(e.target.id); };
+
+document.addEventListener('DOMContentLoaded', function() {
+    <?php if (isset($_SESSION['flash_created_admin'])): ?>
+        const data = <?= json_encode($_SESSION['flash_created_admin']) ?>;
+        const msgBox = document.getElementById('successDetailText');
+
+        msgBox.innerHTML = `Admin Account for <strong>${data.name}</strong> as <strong>${data.role}</strong> with the faculty ID <strong>${data.faculty_id}</strong> has been created.`;
+        
+        openModal('adminSuccessModal');
+        <?php unset($_SESSION['flash_created_admin']); ?>
+    <?php endif; ?>
+});
+
+</script>
+<?php require_once __DIR__ . '/partials/footer.php'; ?>
