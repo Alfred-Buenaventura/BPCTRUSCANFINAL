@@ -1,0 +1,200 @@
+2025-11-18 15:00:39 - Mail Error: SMTP Error: Could not authenticate.
+2025-11-18 15:07:54 - Mail Error: SMTP Error: Could not authenticate.
+2025-11-18 15:26:12 - Mail Error: SMTP Error: Could not authenticate.
+2025-11-18 15:33:32 - Mail Error: SMTP Error: Could not authenticate.
+2025-11-18 15:39:30 - Mail Error: SMTP Error: Could not authenticate.
+2025-11-18 15:40:21 - Mail Error: SMTP Error: Could not authenticate.
+2025-11-18 15:42:18 - Mail Error: SMTP Error: Could not authenticate.
+2025-11-18 15:47:38 - Mail Error: SMTP Error: Could not authenticate. (To: alfredprime2003@gmail.com)
+2025-11-18 15:52:47 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Fingerprint Registration Reminder
+2025-11-18 15:54:03 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Password Reset
+2025-11-18 15:55:43 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-11-18 16:26:00 - SUCCESS: Email sent to gilbert.samudio14@gmail.com | Subject: Your BPC Account
+2025-11-18 19:24:09 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-11-18 20:00:43 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Your BPC Account
+2025-11-18 20:02:45 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Password Reset
+2025-11-19 08:45:20 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Your BPC Account
+2025-11-19 08:46:16 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Fingerprint Registration Reminder
+2025-11-19 13:01:33 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Password Reset
+2025-12-12 18:56:46 - SUCCESS: Email sent to juan.delacruz@bpc.edu.ph | Subject: Your BPC Account
+2025-12-12 18:56:49 - SUCCESS: Email sent to ana.garcia@bpc.edu.ph | Subject: Your BPC Account
+2025-12-13 18:54:27 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Your BPC Account
+2025-12-13 18:56:26 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: BPC Attendance System Account Successfully Created!
+2025-12-13 19:33:37 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: BPC Attendance System Account Successfully Created!
+2025-12-13 19:43:34 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-12-13 19:43:38 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-12-13 20:00:06 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-12-13 20:01:00 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Fingerprint Registration Reminder
+2025-12-13 20:01:03 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Fingerprint Registration Reminder
+2025-12-13 20:11:34 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Action Required: Fingerprint Registration
+2025-12-13 20:11:37 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Action Required: Fingerprint Registration
+2025-12-13 20:19:34 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Password Reset OTP
+2025-12-16 22:29:18 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Password Reset OTP
+2025-12-16 22:30:33 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-12-16 22:35:59 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-12-16 23:04:17 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2025-12-16 23:14:03 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Declined - BPC Attendance System
+2025-12-16 23:15:36 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Request Update - BPC Attendance System
+2025-12-16 23:15:39 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2026-01-14 20:01:48 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: BPC Attendance System Account Successfully Created!
+2026-01-14 20:11:42 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: BPC Attendance System Account Successfully Created!
+2026-01-14 20:33:10 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2026-01-14 20:41:16 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Schedule Request Update - BPC Attendance System
+2026-01-14 20:41:19 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2026-01-20 18:11:28 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Approved - BPC Attendance System
+2026-01-20 18:15:23 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Attendance Notification: Time In Recorded
+2026-01-20 18:25:39 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Attendance Notification: Time Out Recorded
+2026-01-20 18:28:20 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Attendance Notification: Time In Recorded
+2026-01-20 21:11:40 - SUCCESS: Email sent to alfredprime2003@gmail.com | Subject: Action Required: Fingerprint Enrollment
+2026-01-20 22:18:59 - SUCCESS: Email sent to alfredbuenaventura@myyahoo.com | Subject: Administrative Access Granted - BPC TruScan
+2026-01-23 17:33:44 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Declined - BPC Attendance System
+2026-01-23 20:26:02 - SUCCESS: Email sent to realbacardiii@gmail.com | Subject: Schedule Declined - BPC Attendance System
+2026-01-24 00:22:21 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:24:52 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:27:19 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:27:45 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:27:59 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:31:20 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:34:22 - MAILER ERROR: SMTP Error: Could not connect to SMTP host. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:36:57 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:37:50 - MAILER ERROR: SMTP Error: Could not authenticate. | To: bpcattendancemonitoringsystem@gmail.com
+2026-01-24 00:41:12 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:45:20 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:46:24 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:46:44 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:48:12 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:48:28 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:49:37 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:54:30 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:54:46 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:59:10 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 00:59:30 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:08:53 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:09:11 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:12:28 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:13:28 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:42:10 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:42:51 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:46:16 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:47:56 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:49:40 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:50:19 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:52:26 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:53:17 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:53:30 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:54:23 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:55:36 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:56:04 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:58:05 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:59:08 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 01:59:24 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 02:01:13 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-01-24 02:01:44 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-02-03 12:10:33 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 12:11:08 - MAILER ERROR: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server Additional SMTP info: php_network_getaddresses: getaddrinfo failed: No such host is known.  | To: admin@bpc.edu.ph
+2026-02-03 12:39:06 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 12:41:06 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 12:59:51 - SUCCESS: Email sent to admin@bpc.edu.ph.
+2026-02-03 13:27:12 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:27:12 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:29:29 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:30:29 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:30:43 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:34:50 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:34:51 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:37:16 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:37:16 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:37:51 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:42:48 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-03 13:42:49 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-09 15:18:28 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-09 15:22:33 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-09 15:24:37 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-09 18:23:22 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-09 18:55:35 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-09 19:06:28 - SUCCESS: Email sent to juan.delacruz@bpc.edu.ph.
+2026-02-09 19:06:31 - SUCCESS: Email sent to ana.garcia@bpc.edu.ph.
+2026-02-09 21:00:21 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-12 02:24:43 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 02:25:10 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 02:32:36 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-02-12 02:33:24 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 12:51:25 - SUCCESS: Email sent to mjam.011923@gmail.com.
+2026-02-12 13:01:56 - SUCCESS: Email sent to charlymarkmendoza@gmail.com.
+2026-02-12 13:09:54 - SUCCESS: Email sent to mjam.011923@gmail.com.
+2026-02-12 16:03:21 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 16:58:19 - SUCCESS: Email sent to admin@bpc.edu.ph.
+2026-02-12 17:55:17 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 17:56:19 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 17:57:27 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 18:01:55 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 20:12:28 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-12 09:12:06 - CRITICAL: SMTP credentials missing in .env file.
+2026-02-12 09:16:16 - MAILER ERROR: Invalid address:  (From): "bpcattendancemonitoringsystem@gmail.com" | To: mjam.011923@gmail.com
+2026-02-12 09:19:44 - SUCCESS: Email sent to mjam.011923@gmail.com.
+2026-02-12 09:30:37 - SUCCESS: Email sent to mjam.011923@gmail.com.
+2026-02-13 10:40:15 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-13 10:47:29 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-13 15:17:14 - SUCCESS: Email sent to charly.mendoza@bpc.edu.ph.
+2026-02-13 15:52:02 - SUCCESS: Email sent to charly.mendoza@bpc.edu.ph.
+2026-02-13 16:02:46 - SUCCESS: Email sent to charly.mendoza@bpc.edu.ph.
+2026-02-21 21:22:13 - SUCCESS: Email sent to reissazalea@gmail.com.
+2026-02-21 21:49:32 - SUCCESS: Email sent to reissazalea@gmail.com.
+2026-02-21 22:09:48 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-22 20:20:40 - SUCCESS: Email sent to BPC.MA001@gmail.com.
+2026-02-22 20:31:19 - SUCCESS: Email sent to BPC.SA001@gmail.com.
+2026-02-22 20:35:45 - SUCCESS: Email sent to BPC.SA001@gmail.com.
+2026-02-22 20:40:51 - SUCCESS: Email sent to BPC.SA001@gmail.com.
+2026-02-22 20:44:10 - SUCCESS: Email sent to BPC.SA001@gmail.com.
+2026-02-22 20:57:09 - SUCCESS: Email sent to BPC.SA001@gmail.com.
+2026-02-23 02:06:07 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 02:15:46 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 02:33:34 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 02:49:57 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 02:53:36 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 02:56:55 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 02:57:59 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 03:07:20 - SUCCESS: QR Email sent to realbacardiii@gmail.com
+2026-02-23 03:19:26 - SUCCESS: Email sent to realbacardiii@gmail.com.
+2026-02-23 03:19:30 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-02-23 03:19:33 - SUCCESS: Email sent to BPC.SA001@gmail.com.
+2026-02-23 03:19:37 - SUCCESS: Email sent to BPC.MA001@gmail.com.
+2026-03-06 19:49:54 - MAILER ERROR: Invalid address:  (to):  | To: 
+2026-03-06 23:23:21 - MAILER ERROR: Invalid address:  (to):  | To: 
+2026-03-06 23:31:29 - MAILER ERROR: Invalid address:  (to):  | To: 
+2026-03-06 23:41:37 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-06 23:57:40 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 13:27:50 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 13:37:45 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 13:42:01 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 13:44:23 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 13:57:28 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:08:25 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:16:31 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:19:36 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:30:42 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:37:39 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:46:58 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:48:55 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 14:50:18 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 15:08:33 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 15:12:27 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 15:15:22 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 15:23:34 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 15:24:47 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-24 15:25:46 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-30 18:37:31 - SUCCESS: Email sent to alfredprime2003@gmail.com.
+2026-03-30 18:37:35 - SUCCESS: Email sent to BPC.SA001@gmail.com.
+2026-03-30 18:37:38 - SUCCESS: Email sent to BPC.MA001@gmail.com.
+2026-03-30 19:11:03 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:14:16 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:21:13 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:21:21 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:21:56 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:23:36 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:24:10 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:24:17 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:24:44 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:25:59 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:29:32 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
+2026-03-30 19:31:43 - SUCCESS: Email sent to bpcattendancemonitoringsystem@gmail.com.
