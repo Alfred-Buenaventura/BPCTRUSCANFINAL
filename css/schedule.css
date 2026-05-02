@@ -1,0 +1,478 @@
+/* modal size and grid improvements */
+.modal-lg {
+    max-width: 1150px !important;
+    width: 95% !important;
+}
+
+/* schedule entry row layout */
+.schedule-entry-row {
+    display: grid;
+    grid-template-columns: 130px 120px 1fr 105px 105px 165px 40px;
+    gap: 10px;
+    align-items: flex-end;
+    background: #f8fafc;
+    padding: 18px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* remove bottom margin from form groups in rows */
+.schedule-entry-row .form-group { margin-bottom: 0; }
+
+/* label styling for entry rows */
+.schedule-entry-row .form-group label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: var(--gray-500);
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* custom arrow for dropdown menus */
+select.form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%236B7280' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 36px !important;
+}
+
+/* day badge styling */
+.day-badge {
+    display: inline-flex;
+    padding: 4px 10px;
+    background-color: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* completed status badge */
+.ud-badge.completed { background-color: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+
+/* pending status badge */
+.ud-badge.pending { background-color: #f0f9ff; color: #0284c7; border: 1px solid #bae6fd; }
+
+/* table spacing and collapse settings */
+.day-table, .data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+/* table header styling */
+.day-table th, .data-table th {
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* table cell background and borders */
+.day-table td, .data-table td {
+    background: white;
+    padding: 12px 15px;
+    border-top: 1px solid #f1f5f9;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+/* user account schedule table layout */
+.user-schedule-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+/* user schedule table cell formatting */
+.user-schedule-table th, .user-schedule-table td {
+    padding: 12px 15px !important;
+    text-align: left !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* symmetrical tabs container */
+.tabs {
+    display: flex;
+    width: 100%;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+/* tab button base styling */
+.tab-btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 0;
+    background: transparent;
+    color: #475569;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* active tab button styling */
+.tab-btn.active { color: #ffffff; font-weight: 800; }
+
+/* active tab bottom indicator */
+.tab-btn.active::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background: #2563eb; }
+
+/* type pill layout */
+.type-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+/* office type pill color */
+.type-pill.office { background-color: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; }
+
+/* class type pill color */
+.type-pill.class { background-color: #ecfdf5; color: #059669; border: 1px solid #a7f3d0; }
+
+/* time blue highlight */
+.time-blue { color: #2563eb !important; font-weight: 700 !important; }
+
+/* small modal refinements */
+.modal-sm {
+    max-width: 400px !important;
+    border-radius: 16px !important;
+    overflow: hidden;
+}
+
+/* modal icon circle container */
+.modal-icon-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+}
+
+/* success state for modal icon */
+.modal-icon-success {
+    background-color: #ecfdf5;
+    color: #10b981;
+    border: 3px solid #d1fae5;
+}
+
+/* danger state for modal icon */
+.modal-icon-danger {
+    background-color: #fef2f2;
+    color: #ef4444;
+    border: 3px solid #fee2e2;
+}
+
+/* modal action button styling */
+.modal-action-buttons .btn {
+    padding: 12px 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 0.85rem;
+}
+
+/* info card header gradient background */
+.info-card-header {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* day specific table layout settings */
+.day-table {
+    width: 100%;
+    min-width: 700px;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    table-layout: auto;
+}
+
+/* day table header and cell formatting */
+.day-table th, 
+.day-table td {
+    white-space: nowrap;
+    padding: 12px 15px;
+    vertical-align: middle;
+}
+
+/* two column grid system for daily schedule */
+.daily-schedule-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+/* individual day group card styling */
+.day-group {
+    width: 100%; 
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+/* centering logic for the fifth day card */
+.daily-schedule-container:has(.day-group:nth-child(5):last-child) .day-group:nth-child(5) {
+    grid-column: 1 / span 2;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* day header section styling */
+.day-header {
+    background: #f8fafc;
+    padding: 12px;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.15rem;
+    border-bottom: 3px solid #2563eb;
+    color: #2563eb;
+    text-transform: uppercase;
+}
+
+/* horizontal layout for the day table */
+.day-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* day table header titles */
+.day-table th {
+    background: #f1f5f9;
+    padding: 10px 8px;
+    font-size: 0.95rem;
+    color: #64748b;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* day table cell text visibility */
+.day-table td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+    font-size: 1.05rem;
+}
+
+/* proportional column width definitions */
+.col-sub  { width: 30%; } 
+.col-type { width: 15%; }
+.col-time { width: 30%; }
+.col-room { width: 15; } 
+.col-act  { width: 10%; }
+
+/* subject text typography */
+.subject-text {
+    font-weight: 700;
+    color: #1e293b;
+    display: block;
+    line-height: 1.3;
+}
+
+/* phone input field container */
+.phone-input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    position: relative; 
+}
+
+/* focus state for country prefix */
+.country-prefix:focus {
+    outline: none;
+    background: #eff6ff;
+}
+
+/* remove internal borders for phone input field */
+.phone-input-container .phone-field {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* country prefix dropdown and divider line */
+.country-prefix {
+    border: none;
+    border-right: 1px solid #e2e8f0;
+    background: #f8fafc;
+    padding: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+/* ensure phone dropdown can pop over other cards */
+.phone-input-container {
+    overflow: visible !important; 
+    display: flex;
+    z-index: 10;
+}
+
+/* phone input container flex settings */
+.phone-input-container {
+    display: flex;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+}
+
+/* searchable country select field */
+.searchable-select {
+    width: 130px;
+    border: none;
+    background: #f8fafc;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-right: 1px solid #e2e8f0;
+    cursor: pointer;
+}
+
+/* focus state for searchable select */
+.searchable-select:focus {
+    outline: none;
+    background: #eff6ff;
+}
+
+/* phone field base padding */
+.phone-field {
+    border: none !important;
+    padding: 10px !important;
+    flex: 1;
+}
+
+/* accordion body transition logic */
+.user-schedule-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: #fff;
+}
+
+/* hide tab content by default */
+.tab-content { display: none; }
+
+/* show active tab content */
+.tab-content.active { display: block; }
+
+/* modal overlay with background blur */
+.modal-overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(4px);
+    display: flex; justify-content: center; align-items: center; z-index: 2000;
+}
+
+/* system modal card container */
+.system-modal-card {
+    background: #fff; width: 100%; max-width: 550px; border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3); overflow: hidden; border-top: 5px solid #dc3545;
+}
+
+/* faculty id badge styling */
+.badge-id {
+    background: #f1f5f9; color: #475569; padding: 2px 10px; border-radius: 6px; 
+    font-size: 0.75rem; font-weight: 700; border: 1px solid #e2e8f0; display: inline-flex; align-items: center; gap: 5px;
+}
+
+/* weekly hours badge styling */
+.badge-hours {
+    background: #059669; color: #ffffff; padding: 2px 10px; border-radius: 6px; 
+    font-size: 0.75rem; font-weight: 800; border: 1px solid #047857; display: inline-flex; align-items: center; gap: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* system modal header spacing */
+.system-modal-header { padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; font-weight: 600; letter-spacing: 0.5px; }
+
+/* danger state for red header */
+.system-modal-header.bg-danger { background-color: #dc3545 !important; border-bottom: 2px solid #b21f2d; }
+
+/* header content text color */
+.system-modal-header .header-content span { color: #ffffff !important; font-weight: 700; text-transform: uppercase; }
+
+/* modal close button styling */
+.modal-close-icon { background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+/* system modal body padding */
+.system-modal-body { padding: 25px; }
+
+/* instruction label typography */
+.instruction-label { font-size: 0.9rem; font-weight: 600; margin-bottom: 20px; text-transform: uppercase; }
+
+/* conflict info grid layout */
+.conflict-info-grid { display: flex; flex-direction: column; gap: 15px; }
+
+/* info block label settings */
+.info-block label { display: block; font-size: 0.75rem; color: #888; text-transform: uppercase; margin-bottom: 4px; }
+
+/* info value typography */
+.info-value { font-size: 1rem; color: #333; }
+
+/* two column info row layout */
+.info-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+
+/* highlighted info block for conflicts */
+.highlight-block { background: #fff5f5; padding: 12px; border-radius: 6px; border: 1px dashed #feb2b2; }
+
+/* system modal footer background */
+.system-modal-footer { padding: 15px 25px; background: #f8f9fa; display: flex; justify-content: flex-end; gap: 10px; }
+
+/* secondary system action button */
+.btn-system-secondary { padding: 8px 18px; border: 1px solid #ddd; background: #fff; border-radius: 4px; cursor: pointer; }
+
+/* danger system action button */
+.btn-system-danger { padding: 8px 18px; border: none; background: #dc3545; color: white; border-radius: 4px; cursor: pointer; font-weight: 600; }
+
+/* remove row button base styling */
+.btn-remove-row {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: #ef4444;
+    background: #fef2f2;
+    border: 1px solid #fee2e2;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* hover state for remove row button */
+.btn-remove-row:hover { background: #fee2e2; color: #dc2626; }

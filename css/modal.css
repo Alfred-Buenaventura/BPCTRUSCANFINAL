@@ -1,0 +1,101 @@
+/* setting the sidebar width as a root variable */
+:root {
+    --sidebar-width: 280px; 
+}
+
+/* basic modal setup that keeps the tint to the content area */
+.modal {
+    position: fixed;
+    top: 0;
+    left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    height: 100vh;
+    background: rgba(15, 23, 42, 0.7);
+    z-index: 99999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(4px);
+}
+
+/* make the modal full width on smaller screens */
+@media (max-width: 1024px) {
+    .modal { left: 0; width: 100%; }
+}
+
+/* main modal content box with some shadow and fade animation */
+.modal-content {
+    background: white;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    width: 95%;
+    max-width: 500px;
+    animation: modalFadeIn 0.3s ease-out;
+}
+
+/* animation for a subtle slide and fade when it pops up */
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* header style with a light gray background and border */
+.modal-header {
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1.25rem 1.5rem;
+    background-color: #f8fafc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* header title font and gap for icons */
+.modal-header h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+}
+
+/* base padding for the modal body */
+.modal-body { padding: 2rem 1.5rem; }
+
+/* footer section with centered buttons */
+.modal-footer {
+    background-color: #f8fafc;
+    border-top: 1px solid #f1f5f9;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+/* circular container for status icons */
+.status-icon-circle {
+    width: 64px; height: 64px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 28px; margin: 0 auto 1.25rem;
+}
+
+/* light background colors for success and danger states */
+.bg-success-light { background: #f0fdf4; color: #22c55e; }
+.bg-danger-light { background: #fef2f2; color: #ef4444; }
+.bg-warning-light { background: #fff7ed; color: #f97316; }
+.bg-info-light { background: #f0f9ff; color: #0ea5e9; }
+
+/* extra large modal setting for wider tables */
+.modal-xl {
+    max-width: 1000px !important;
+    width: 95%;
+}
+
+/* make sure tables don't break the layout */
+.data-table {
+    width: 100%;
+    table-layout: auto;
+}

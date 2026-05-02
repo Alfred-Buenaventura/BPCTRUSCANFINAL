@@ -1,0 +1,327 @@
+/* dtr view screen styles */
+body.dtr-body {
+    background: #525659;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* wrapper for the dtr container */
+.dtr-container-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #525659;
+    min-width: min-content; 
+}
+
+/* main container for the dtr */
+.dtr-container {
+    background: white;
+    padding: 20px;
+    width: 420px; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+}
+
+/* dtr table settings */
+.dtr-table {
+    width: 100% !important;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+/* styling for table cells */
+.dtr-table th, .dtr-table td {
+    border: 1px solid black;
+    padding: 12px 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* dtr header section */
+.dtr-header { 
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif; 
+    margin-bottom: 5px; 
+}
+
+/* form 48 label */
+.dtr-header h3 { 
+    font-size: 8pt; 
+    font-weight: bold; 
+    margin: 0; 
+    text-align: left; 
+    text-transform: uppercase; 
+}
+
+/* daily time record title */
+.dtr-header h2 { 
+    font-size: 11pt; 
+    font-weight: bold; 
+    margin: 3px 0; 
+    text-transform: uppercase; 
+}
+
+/* user info table layout */
+.info-table { 
+    width: 100%; 
+    margin-bottom: 5px; 
+    font-size: 8pt; 
+    border-collapse: collapse; 
+    font-family: 'Arial', sans-serif; 
+}
+
+/* info table cell spacing */
+.info-table td { padding: 1px 0; }
+
+/* underline for info values */
+.info-table .value { 
+    border-bottom: 1px solid #000; 
+    width: 100%; 
+    font-weight: bold; 
+    text-align: center; 
+}
+
+/* faculty id row centering */
+.faculty-id-row { 
+    text-align: center; 
+    font-size: 7.5pt; 
+    font-weight: bold; 
+    margin: 2px 0; 
+}
+
+/* main attendance table layout */
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5px;
+}
+
+/* attendance table borders and padding */
+.attendance-table th, 
+.attendance-table td {
+    border: 1px solid black;
+    padding: 4px 2px;
+    text-align: center;
+}
+
+/* footer content and spacing */
+.dtr-footer-content { 
+    margin-top: 5px; 
+    font-size: 7pt; 
+    line-height: 1.1; 
+    font-family: 'Times New Roman', serif; 
+    flex-grow: 1; 
+}
+
+/* signature block centering */
+.signature-block { 
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+/* signature name underline */
+.signature-name-print { 
+    font-size: 8.5pt; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    text-decoration: underline; 
+    display: block; 
+    margin-bottom: 2px; 
+}
+
+/* signature label at the bottom */
+.signature-label { 
+    font-size: 7pt; 
+    margin-top: 2px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+}
+
+/* styling for holiday text */
+.holiday-text { 
+    color: #dc2626; 
+    font-style: italic; 
+    font-size: 6pt; 
+}
+
+/* floating print controls */
+.print-controls { 
+    position: fixed; 
+    top: 20px; 
+    right: 20px; 
+    background: white; 
+    padding: 1rem; 
+    border-radius: 8px; 
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1); 
+    z-index: 100; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+
+/* base style for dtr buttons */
+.btn-dtr { 
+    padding: 0.5rem 1rem; 
+    cursor: pointer; 
+    text-decoration: none; 
+    font-weight: 600; 
+    border-radius: 0.375rem; 
+    border: 1px solid #d1d5db; 
+    background: #f3f4f6; 
+    color: #374151; 
+    font-size: 0.875rem; 
+    transition: all 0.2s; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 5px; 
+}
+
+/* success button style */
+.btn-dtr-success { 
+    background: #059669; 
+    color: white; 
+    border-color: #059669; 
+}
+
+/* print overrides for a4 portrait */
+@media print {
+    html, body {
+        height: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow: hidden;
+    }
+
+    .print-controls {
+        display: none !important;
+    }
+
+    .dtr-container-wrapper {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 0.2in !important;
+        width: 100% !important;
+        background: none !important;
+    }
+
+    .dtr-container {
+        width: 3.5in !important;
+        height: 11in !important;
+        border: 1.2px solid black !important;
+        padding: 10px !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+        box-shadow: none !important;
+        display: flex;
+        flex-direction: column;
+        background: white !important;
+        page-break-inside: avoid;
+    }
+
+    .attendance-table {
+        font-size: 8.5pt !important;
+        width: 100% !important;
+    }
+
+    .attendance-table td, .attendance-table th {
+        padding: 2px 1px !important;
+        border: 1px solid black !important;
+    }
+
+    @page {
+        size: portrait;
+        margin: 0.5cm;
+    }
+}
+
+/* ghost input base design */
+.dtr-input {
+    width: 100%;
+    border: 1px solid transparent;
+    background: transparent;
+    font-family: inherit;
+    font-size: 0.9rem;
+    color: #1e293b;
+    text-align: center;
+    padding: 4px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+/* hover effect for inputs */
+.dtr-input:hover {
+    background: rgba(16, 185, 129, 0.05);
+    border-color: #cbd5e1;
+}
+
+/* focus effect for inputs */
+.dtr-input:focus {
+    background: #ffffff;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+    outline: none;
+    cursor: text;
+}
+
+/* row highlight for unsaved changes */
+.dtr-row-changed {
+    background-color: #fffbeb !important;
+}
+
+/* floating save button settings */
+#saveDTRBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* table layout fix for inputs */
+.attendance-table {
+    table-layout: fixed !important;
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+/* row height and cell padding reset */
+.attendance-table td {
+    padding: 0 !important;
+    height: 22px;
+}
+
+/* transparent input sizing inside cells */
+.dtr-input {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    background: transparent;
+    text-align: center !important;
+    font-family: inherit;
+    font-size: 10.5px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* input focus ring styling */
+.dtr-input:focus {
+    background: #ffffff !important;
+    outline: 2px solid #10b981 !important;
+    outline-offset: -2px;
+}
+
+/* modal overlay center logic */
+.modal-overlay {
+    display: none;
+    transition: opacity 0.3s ease;
+}

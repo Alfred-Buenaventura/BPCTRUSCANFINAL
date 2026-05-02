@@ -1,0 +1,135 @@
+/* sidebar: fixed at the top layer with a slide effect */
+@media screen and (max-width: 992px) {
+    .sidebar {
+        position: fixed !important;
+        top: 0;
+        left: 0 !important;
+        width: 280px !important;
+        height: 100vh !important;
+        background: #1a1a1a !important; 
+        z-index: 99999 !important; 
+        transform: translateX(-100%);
+        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        display: block !important;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+        box-shadow: 10px 0 30px rgba(0,0,0,0.5) !important;
+    }
+
+    /* overlay: goes right under the sidebar with a blur effect */
+    #sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 99998 !important; 
+        display: none;
+        backdrop-filter: blur(3px); 
+    }
+
+    /* modal fix: keeps modals from getting buried under the overlay */
+    .modal, .modal-backdrop {
+        z-index: 99990 !important; 
+    }
+
+    /* scroll lock: stops the background from moving when menu is open */
+    body.menu-open {
+        overflow: hidden !important;
+    }
+}
+
+/* centering the modals and resetting the margins for mobile */
+@media screen and (max-width: 992px) {
+    .modal, .modal-dialog {
+        margin: 10px auto !important; 
+        left: 0 !important;
+        right: 0 !important;
+        width: 95% !important; 
+        max-width: none !important;
+        position: fixed !important;
+    }
+
+    .modal-content {
+        width: 100% !important;
+        border-radius: 12px !important;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.3) !important;
+    }
+
+    /* content fix: removing side margins to stop the modal from shifting */
+    body.modal-open .main-content, 
+    body.modal-open .content-wrapper {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        transform: none !important;
+    }
+
+    /* scrollable tables inside modals for smaller screens */
+    .modal body table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+}
+
+/* clean block layout for the dtr body to avoid flex issues */
+@media screen and (max-width: 992px) {
+    body.dtr-body {
+        display: block !important; 
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        overflow-x: hidden !important;
+    }
+
+    /* container wrapper: used as the anchor for centering */
+    .dtr-container-wrapper {
+        display: block !important; 
+        width: 100% !important;
+        min-width: 0 !important; 
+        padding: 20px 0 !important;
+        margin: 0 !important;
+        text-align: center !important; 
+    }
+
+    /* dtr container: centers the scaling and handles the ghost space */
+    .dtr-container {
+        display: inline-block !important; 
+        float: none !important;
+        width: 420px !important; 
+        transform: scale(0.8); 
+        transform-origin: top center !important; 
+        margin-bottom: -100px !important; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.4) !important;
+    }
+
+    /* compact modal settings for standard mobile phones */
+    .modal-dialog {
+        width: 80% !important; 
+        max-width: 360px !important; 
+        margin: 1.5rem auto !important; 
+        left: 0 !important;
+        right: 0 !important;
+        position: relative !important;
+    }
+
+    .modal-content {
+        width: 100% !important;
+        border-radius: 12px !important;
+        padding: 10px !important;
+    }
+}
+
+/* extra scaling for very tiny screens like the iphone se */
+@media screen and (max-width: 400px) {
+    .dtr-container {
+        transform: scale(0.72);
+        margin-bottom: -140px !important;
+    }
+    .modal-dialog {
+        width: 90% !important; 
+    }
+}
