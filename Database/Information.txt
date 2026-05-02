@@ -1,0 +1,2 @@
+For IONOS Server, Database Name should be kept as is, as in the Github Repository.
+If using on local server (xampp) database name should be bpc_attendance.
